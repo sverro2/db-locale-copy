@@ -106,7 +106,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_map_replace_source_locale() {
+    fn test_replace_source_locale() {
         let parser = replace_source_locale("new-locale");
 
         let input = "some text, 'old-locale' and more text";
@@ -124,7 +124,7 @@ mod tests {
     }
 
     #[test]
-    fn test_map_replace_target_locale() {
+    fn test_replace_target_locale() {
         let parser = replace_target_locale("new-locale");
 
         let input = "WHERE column_a = 'old-locale'";
